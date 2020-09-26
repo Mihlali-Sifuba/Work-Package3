@@ -7,6 +7,7 @@ GPIO.setup(11, GPIO.OUT, initial=1) #Set GPIO pin 11 as output and set its initi
 #Toggle the LEDs
 for i in range(0,10):
     GPIO.output(11, True)
-    time.sleep(0.5)
+    time.sleep(10)
     GPIO.output(11, False)
+    time.sleep(10)
 GPIO.cleanup()
