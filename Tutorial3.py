@@ -21,7 +21,7 @@ if __name__ == "__main__":
     while pressedButton: # Run forever if button not pressed
         if GPIO.input(13) == GPIO.LOW:
             GPIO.output(15, True)
-            time.sleep(1)
+            time.sleep(5)
             pressedButton = False
     GPIO.cleanup()
 #The end
