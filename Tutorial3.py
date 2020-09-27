@@ -7,7 +7,7 @@ GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 13 to be an input 
 
 #Toggle the LEDs
 def main():
-    for i in range(0,10):
+    for i in range(0,10): #Loop over 10 times
         GPIO.output(11, True)
         time.sleep(1)
         GPIO.output(11, False)
