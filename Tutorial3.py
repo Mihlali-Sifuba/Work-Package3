@@ -4,6 +4,7 @@ import time
 GPIO.setmode(GPIO.BOARD) #Set up board GPIO numbering mode
 GPIO.setup(11, GPIO.OUT, initial=1) #Set GPIO pin 11 as output and set its initial value to High
 GPIO.setup(13, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 13 to be an input pin and set initial value to be pulled low (off)
+GPIO.setwarnings(False)
 
 #Toggle the LEDs
 def main():
